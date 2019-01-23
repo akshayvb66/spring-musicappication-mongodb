@@ -80,12 +80,12 @@ public class MusicServiceImpl implements MusicService{
         }
 
 
-    /*This method is used to search for a track by its name*/
-    @Override
-    public List<Music> findByName(String trackName) {
-
-        return musicRepository.findByName(trackName);
-        }
+//    /*This method is used to search for a track by its name*/
+//    @Override
+//    public List<Music> findByName(String trackName) {
+//
+//        return musicRepository.findByName(trackName);
+//        }
 
 
 }

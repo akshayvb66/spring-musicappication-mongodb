@@ -29,5 +29,5 @@ public interface MusicService {
     public Optional<Music> findById(int trackId) throws TrackNotFoundException;
 
     /*This method is used to search for a track by its name*/
-    public List<Music> findByName(String trackName);
+   // public List<Music> findByName(String trackName);
 }

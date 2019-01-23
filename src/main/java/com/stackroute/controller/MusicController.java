@@ -90,20 +90,20 @@ public class MusicController {
 
 
     /*This method is used to search for a track by its name*/
-    @GetMapping("musics/{trackName}")
-    public ResponseEntity<?> getTrackByName(@PathVariable("trackName") String trackName){
-
-        ResponseEntity responseEntity;
-        try
-        {
-            responseEntity= new ResponseEntity(musicService.findByName(trackName),HttpStatus.OK);
-        }
-        catch(Exception ex){
-
-            responseEntity= new ResponseEntity(ex.getMessage(),HttpStatus.CONFLICT);
-        }
-        return responseEntity;
-    }
+//    @GetMapping("musics/{trackName}")
+//    public ResponseEntity<?> getTrackByName(@PathVariable("trackName") String trackName){
+//
+//        ResponseEntity responseEntity;
+//        try
+//        {
+//            responseEntity= new ResponseEntity(musicService.findByName(trackName),HttpStatus.OK);
+//        }
+//        catch(Exception ex){
+//
+//            responseEntity= new ResponseEntity(ex.getMessage(),HttpStatus.CONFLICT);
+//        }
+//        return responseEntity;
+//    }
 
 
 }

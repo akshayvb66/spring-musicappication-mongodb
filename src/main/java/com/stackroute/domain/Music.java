@@ -4,14 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
 
 /** This is Music class which defines the track object with trackId, trackName
  * and trackComment
  */
-@Entity
+@Document
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
